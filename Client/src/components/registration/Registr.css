@@ -1,0 +1,67 @@
+.registration__container {
+    width: 458px;
+    height: 627px;
+    border-radius: 30px;
+    box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.17);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: aliceblue;
+    
+}
+
+.registration__container__switch {
+    margin-top: 87px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 45px;
+    gap: 13px;
+    
+}
+
+.registration__container__switch button {
+    width: 130px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: none;
+    cursor: pointer;
+}
+
+.registration__container__inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 9px;
+    margin-bottom: 37px;
+}
+
+.registration__container__inputs input {
+    width: 273px;
+    height: 40px;
+    border-radius: 7px;
+    border: none;
+    background-color: #F8F1FF;
+    
+}
+
+.registration__container__btns {
+    display: flex;
+    flex-direction: column;
+    width: 273px;
+}
+
+.registration__container__btns button {
+    width: 273px;
+    height: 40px;
+    border-radius: 7px;
+    border: none;
+    background-color: #985ACE;
+    cursor: pointer;
+    
+}
+
+.registration__container__btns hr {
+    width: 100%;
+    margin: 20px 0;
+
+}
