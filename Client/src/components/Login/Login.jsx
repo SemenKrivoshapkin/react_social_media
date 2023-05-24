@@ -6,7 +6,24 @@ const Login = () => {
     const [data, setData] = useState()
     
     
-    const submit = useCallback(() => {
+    const submit = useCallback( async () => {
+        if(!data?.email || !data?.password) return;
+        try {
+            
+                    const res = await fetch(`http://localhost:8000/auth/login`, {
+                    method: "POST",
+                    body: JSON.stringify(data),
+                    headers: {
+                        "Content-Type": "application/json",
+                        'Authorization': `Bearer ${localStorage.getItem('accessToken')}`
+                    }
+                })
+                if(res.status===200) {
+                    router('/home')
+                } 
+        } catch (error) {
+            console.log(error)
+        }
     }, [data])
 
     const router = useNavigate()

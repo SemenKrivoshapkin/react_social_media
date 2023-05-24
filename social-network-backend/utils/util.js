@@ -1,4 +1,4 @@
-const jwt = require('jsonwebtoken')
+import jwt from 'jsonwebtoken'
 
 const generateToken = (email, password) => {
     
@@ -11,9 +11,9 @@ const generateToken = (email, password) => {
         refreshToken: jwt.sign(
             {password, email}, 
             'itcbootcamp_refresh', 
-            {expiresIn: '10m'},
+            {expiresIn: '30m'},
             )
     }
 }
 
-module.exports = generateToken
+export default generateToken
